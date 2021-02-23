@@ -1,0 +1,20 @@
+# 应用名称
+
+spring:
+  datasource:
+    username: root
+    password: 123
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.example.entity
+
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug
+

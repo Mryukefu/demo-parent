@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: demo-web
+server:
+  port: 9988
